@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    font-family: Kumbh Sans;
+}
+
+nav{
+    display: flex;
+    height: 20vh;
+    border-bottom: 1px solid rgb(209, 200, 200);
+}
+
+nav .left-side{
+    display: flex;
+    flex: 70%;
+    padding: 20px 20px 20px 90px;
+    align-items: center;
+}
+
+nav .left-side ul{
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+nav .left-side ul li{
+    display: inline;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+nav .left-side ul li a{
+    text-decoration: none;
+    color: grey;
+}
+
+nav .left-side ul li a.list-active{
+    color: black;
+    font-weight: bold;
+    padding: 50px 0;
+    border-bottom: 5px solid orange;
+}
+
+nav .right-side{
+    display: flex;
+    flex: 30%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 90px 20px 20px;
+}
+
+nav .right-side .account img{
+    width: 30%;
+    padding-left: 40px;
+}
+
+.container{
+    /* background-color: greenyellow; */
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section{
+    /* background-color: indigo; */
+    display: flex;
+    width: 80%;
+}
+
+.section .left-section{
+    /* background-color: lightgreen; */
+    flex: 50%;
+    padding: 10px;
+}
+
+.section .left-section img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section .left-section .list-item{
+    /* background-color: hotpink; */
+    display:flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+/* .section .left-section .list-item div{
+    /* flex: 100%; */
+    /* background-color: greenyellow; */
+    /* padding:10px; 
+} */
+
+.section .left-section .list-item img{
+    width: 90px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.section .left-section .list-item img:hover{
+    border: 3px solid orange;
+    opacity: 0.5;
+}
+
+.section .right-section{
+    flex: 50%;
+    padding-left: 120px;
+    margin-top: 50px;
+}
+
+.section .right-section h5{
+    color: orange;
+    margin-bottom: -25px;
+}
+
+.section .right-section h1{
+    font-size: 50px;
+}
+
+.section .right-section .price-tag{
+    display: flex;
+    align-items: center;
+}
+
+.section .right-section .price-tag h4{
+    font-size: 30px;
+}
+
+.section .right-section .price-tag .discount p{
+    background-color: rgb(245, 215, 160);
+    color: orange;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.section .right-section .original-price h6{
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: -30px;
+}
+
+.section .right-section .amount{
+    display: flex;
+    align-items: center;
+}
+
+.section .right-section .amount .buttonmin{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(218, 216, 216);
+    border: none;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+}
+
+.section .right-section .amount .buttonplus{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(218, 216, 216);
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.section .right-section .amount .quantity{
+    background-color: rgb(218, 216, 216);
+    height: 38px;
+    width: 40px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.section .right-section .amount .cart-button{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    border: none;
+    margin-left: 20px;
+}
+
+.section .right-section .amount .cart-button img{
+    width: 15px;
+}
+
+.section .right-section .amount .cart-button p{
+    text-align: center;
+    font-weight: bold;
+    font-family: Kumbh Sans;
+    margin-left: 15px;
+    font-size: 12px;
+    color: white;
+}

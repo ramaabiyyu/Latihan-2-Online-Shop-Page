@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Latihan 2</title>
+</head>
+<body>
+    <nav>
+        <div class="left-side">
+            <a href="index.html"><img src="images/logo.svg" alt=""></a>
+            <ul>
+                <li>
+                    <a href="#">Collections</a> 
+                </li>
+                <li>
+                    <a href="#">Men</a>
+                </li>
+                <li>
+                    <a href="#" class="list-active">Women</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <div class="cart"><a href="#"><img src="images/icon-cart.svg" alt=""></a></div>
+            <div class="account"><a href="#"><img src="images/image-avatar.png" alt=""></a></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+            <div id="product" class="left-section">
+                <img src="images/image-product-1.jpg" alt="">
+                <div class="list-item">
+                    <div>
+                        <img src="images/image-product-1-thumbnail.jpg" alt="" onclick="image1()">
+                    </div>
+                    <div>
+                        <img src="images/image-product-2-thumbnail.jpg" alt="" onclick="image2()">
+                    </div>
+                    <div>
+                        <img src="images/image-product-3-thumbnail.jpg" alt="" onclick="image3()">
+                    </div>                    
+                    <div>
+                        <img src="images/image-product-4-thumbnail.jpg" alt="" onclick="image4()">
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <h5>SNEAKER COMPANY</h5>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything teh weather can offer.</p>
+                <div class="price-tag">
+                    <div class="down-price"><h4>$125.00</h4></div>
+                    
+                    <div class="discount"><p>50%</p></div>
+                </div>
+                <div class="original-price">
+                    <h6><s>$250.00</s></h6>
+                </div>
+                <div class="amount" id="quantity">
+                    <div><button class="buttonmin" onclick="decrement()"><img src="images/icon-minus.svg" alt=""></button></div>
+                    <input type="text" class="quantity" id="number" value="0" readonly>
+                    <div><button class="buttonplus" onclick="increment()"><img src="images/icon-plus.svg" alt=""></button></div>
+                    <div><button class="cart-button"><img src="images/icon-cart.svg" alt=""><p>Add to cart</p></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="ecommerce.js"></script>
+</body>
+</html>
